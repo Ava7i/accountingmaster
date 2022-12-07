@@ -1,0 +1,64 @@
+version: "3.1"
+
+nlu:
+- intent: sales
+  examples: |
+    - Company sell [32](number) unit [Pumpkin](product) of [$8000](amount) from office garden on cash to [Chaldal](customer) on [17th November,2003](date)
+    - Company sell [23](number) unit [Pumpkin](product) of [$8100](amount) from office garden on cash to [Chaldal](customer) on [17th June,2013](date)
+    - Anchorblock sold [23](number) unit [Pumpkin](product) of [$9000](amount) from office garden on cash to [Chaldal](customer) on [17th July,2002](date)
+    - Company sell [2](number)unit [Potato](product) of [$18000](amount) from office garden on cash to [Anchorshop](customer) on [17th August,2001](date)
+    - Company sold [7](number) [Grapes](product) of [$2](amount) from office garden on cash to [Agora](customer) on [17th November,2001](date)
+    - Company sell [5](number) [mangoes](product) of [$80](amount) from office garden on credit to [shopno](customer) on [17th November,2000](date)
+    - Company sold [23](number) [guava](product) of [$800](amount) from office garden on credit to [Chaldal](customer) on [17th November,2013](date)
+    - Received a cash payment of [$2,000](amount) for services performed on account on [May 20](date)
+    - Sell [1](number) Anchor Token on BSC net of [$32000](amount)
+    - Take penalty amount of [$187](amount) from an employee that will be balanced from his salary
+    - Company sell [32] unit (number) [Pumpkin](product) of [$8000](amount) from office garden on credit to [Chaldal](customer) on [17th November,2003](date)
+    - Company sell [23] unit(number) [Pumpkin](product) of [$8100](amount) from office garden on credit to [Chaldal](customer) on [17th June,2013](date)
+    - Company sell [23](number) unit [Pumpkin](product) of [$9000](amount) from office garden on credit to [Chaldal](customer) on [17th July,2002](date)
+    - Company sell [23](number) unit [Potato](product) of [$18000](amount) from office garden on credit to [Anchorshop](customer) on [17th August,2001](date)
+    - Company sell [7](number) unit [Grapes](product) of [$2](amount) from office garden on credit to [Agora](customer) on [17th November,2001](date)
+    - Company sell [5](number) unit [mangoes](product) of [$80](amount) from office garden on credit to [shopno](customer) on [17th November,2000](date)
+    - Company sell [23](number) unit [guava](product) of [$800](amount) from office garden on credit to [Chaldal](customer) on [17th November,2013](date)
+    - Company sell [23](number) unit [banana](product) of [$803](amount) from office garden on credit to [Chaldal](customer) on [15th November,2013](date)
+    - I sold my [car](product) to [daraz.com](customer)
+
+- intent: expense
+  examples: |
+    - [$5000](amount) paid for office decoration on payble on [17th November,2003](date)
+    - [$125000](amount) paid for office decoration on payble on [17th November,2013](date)
+    - Buy [10](number) hand wash for one month on cash [$456](amount) on [18th August](date)
+    - Buy [10](number) pc for one month on cash [$456](amount) on [19th August](date)
+    - Buy [10](number) [water bottle](product) on cash [$100](amount)
+    - Company gifted on Adel's weeding [$5000](amount) on cash on [26th November,2022](date)
+    - Company spend [$100](amount) for office lunch of [26](number) employee on cash from [Anchorshop](vendor)
+    - Company spend [$100](amount) for office lunch of [126](number) employee on cash from [food panda](vendor) on [November 12,2018]
+    - Company purchased [$1200](amount) for office lunch of [26](number) employee on cash from [food panda](vendor)
+    - Anchorblock spend [$1000](amount) for office lunch of [786](number) employee on cash from [food panda](vendor)
+    - Buy [a](number) [bus](product) for office transportation on credit [$50000](amount) 
+    - Buy [a](number) [TV](product) [$328](amount) on credit on [20th November,2022](date)
+    - Company purchase [5](number) unit  [banana tree](product) of [$100](amount) for office garden on credit from [Chaldal](vendor)on [16th November,2022](date)
+    - Company purchase [50](number) unit [Pumpkin](product) seeds of [$120](amount) for office garden on credit from [Chaldal](vendor)
+    - Company purchase [55](number) unit [banana](product) tree of $150 for office garden on credit from [shopno](vendor) on [6th july,2020](date)
+    - Company purchase [65](number) unit [Coke tree](product) of $65 for office garden on credit from [agora](vendor)on [26th june,2022](date)
+    - Paid [$5000](amount) advance for [T-Shirt](product) of [286](number) employee on credit on [16th November,2022](date)
+    - Paid electricity bill of month November [$1123](amount) on bank loan on [16th November,2020](date)
+    - The company purchased [$7,000](amount) of office equipment on credit on [26/11/2022](date)
+    - The company paid [$7,000](amount) of office equipment on crediton [9th November,2012](date)
+    - The company purchased [50](number)[pc](product)[$1,67,700,000](amount) of office equipment on credit
+    - The company purchased [$17,000](amount) of office equipment on credit on [6th December,2022](date)
+    - The company purchased [$7,000](amount) of office equipment on credit from [Chaldal](vendor) on [16th November,2012](date)
+    - The company purchased [$7,000](amount) of office equipment on creditfrom [agora](vendor) on [2/12/022](date)
+    - The company purchased [$7,000](amount) of office equipment on credit from [shopno](vendor) on [16th November,2022](date)
+
+
+responses:
+  utter_sales:
+  - text: "Here is your sales details"
+
+
+  utter_expense:
+  - text: "Here is your expense details"
+
+  utter_default:
+  - text: "Hey please put your valid text. Thank you."

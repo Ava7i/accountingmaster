@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-ammount",
+      "2": "I-ammount",
+      "3": "L-ammount",
+      "4": "U-ammount",
+      "5": "B-date",
+      "6": "I-date",
+      "7": "L-date",
+      "8": "U-date",
+      "9": "B-number",
+      "10": "I-number",
+      "11": "L-number",
+      "12": "U-number",
+      "13": "B-product",
+      "14": "I-product",
+      "15": "L-product",
+      "16": "U-product",
+      "17": "B-vendor",
+      "18": "I-vendor",
+      "19": "L-vendor",
+      "20": "U-vendor",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-ammount": 1,
+      "I-ammount": 2,
+      "L-ammount": 3,
+      "U-ammount": 4,
+      "B-date": 5,
+      "I-date": 6,
+      "L-date": 7,
+      "U-date": 8,
+      "B-number": 9,
+      "I-number": 10,
+      "L-number": 11,
+      "U-number": 12,
+      "B-product": 13,
+      "I-product": 14,
+      "L-product": 15,
+      "U-product": 16,
+      "B-vendor": 17,
+      "I-vendor": 18,
+      "L-vendor": 19,
+      "U-vendor": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

@@ -1,0 +1,26 @@
+version: "3.1"
+
+# rules:
+
+# - rule: Say goodbye anytime the user says goodbye
+#   steps:
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+# - rule: Say 'I am a bot' anytime the user challenges
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+# version: "2.0"
+
+rules:
+
+- rule: respond to sales
+  steps:
+    - intent: sales
+    - action: utter_sales
+
+- rule: respond to expense
+  steps:
+    - intent: expense
+    - action: utter_expense

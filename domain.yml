@@ -1,0 +1,54 @@
+version: "3.1"
+
+intents:
+  - sales:
+      use_entities: [number, product, date, customer,amount]
+  - expense: 
+       use_entities: [number, product, date, vendor,amount]
+  
+
+
+slots:
+  number:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: number
+
+  product:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: product
+  date:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: date
+  vendor:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: vendor
+  amount:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: amount
+  customer:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: customer
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

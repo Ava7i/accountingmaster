@@ -1,0 +1,17 @@
+{
+  "utter_sales": [
+    {
+      "text": "Here is your sales details"
+    }
+  ],
+  "utter_expense": [
+    {
+      "text": "Here is your expense details"
+    }
+  ],
+  "utter_default": [
+    {
+      "text": "Hey please put your valid text. Thank you."
+    }
+  ]
+}
